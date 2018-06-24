@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wine Details - Soyka Wine System</title>
+    <link rel="stylesheet" href="../css/master.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="../">Home</a></li>
+            <li><a href="../wine-details">Wine Details</a></li>
+        </ul>
+    </nav>
+    <div id="input">
+        <input type="text" id="bottleLocation" placeholder="Slot Code">
+        <button onclick="showBottleInfo(document.getElementById('bottleLocation').value);">Show Bottle Info</button>
+    </div>
+    <br>
+    <div id="output">
+        Alcohol Percentage: <span id="alchoholPercentage"></span>
+        <br>
+        Barcode: <span id="barcode"></span>
+        <br>
+        Bottle Locations: <span id="bottleLocations"></span>
+        <br>
+        Bottle Size: <span id="bottleSize"></span>
+        <br>
+        Country of Origin: <span id="countryOfOrigin"></span>
+        <br>
+        Name: <span id="name"></span>
+        <br>
+        Price: <span id="price"></span>
+        <br>
+        Producer: <span id="producer"></span>
+        <br>
+        Purchase Year: <span id="purchaseYear"></span>
+        <br>
+        Purchased From: <span id="purchasedFrom"></span>
+        <br>
+        Quantity Available: <span id="quantityAvailable"></span>
+        <br>
+        Type of Wine: <span id="typeOfWine"></span>
+        <br>
+        Year: <span id="year"></span>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
